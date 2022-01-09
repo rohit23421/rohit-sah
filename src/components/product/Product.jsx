@@ -1,8 +1,13 @@
 import React from "react";
-import "./product.css";
+import "./product.scss";
 
-const Product = () => {
-  return <div className="p">Card</div>;
-};
-
-export default Product;
+export default function Product({ id, title, active, setSelected }) {
+  return (
+    <li
+      className={active ? "product active" : "product"}
+      onClick={() => setSelected(id)}
+    >
+      {title}
+    </li>
+  );
+}
