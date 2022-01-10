@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect, useContext } from "react";
 import "./productList.css";
 import "./productList.scss";
 import Product from "../product/Product";
@@ -9,12 +9,15 @@ import {
   designPortfolio,
   contentPortfolio,
 } from "../../data";
+import { ThemeContext } from "../../context";
 
-export default function ProductList(){
+export default function ProductList() {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
 
-const [selected, setSelected] = useState("featured");
+  const [selected, setSelected] = useState("featured");
   const [data, setData] = useState([]);
-      const list = [
+  const list = [
     {
       id: "featured",
       title: "Featured",
@@ -37,7 +40,7 @@ const [selected, setSelected] = useState("featured");
     },
   ];
 
-    useEffect(() => {
+  useEffect(() => {
     switch (selected) {
       case "featured":
         setData(featuredPortfolio);
@@ -60,8 +63,14 @@ const [selected, setSelected] = useState("featured");
   }, [selected]);
 
   return (
-
-      <div className="portfolio" id="portfolio">
+    <div
+      className="portfolio"
+      id="portfolio"
+      style={{
+        backgroundColor: darkMode ? "#222" : "white",
+        color: darkMode && "white",
+      }}
+    >
       {/* <div className="pl-texts">
         <h1 className="pl-title">Create & inspire. It's Rohit</h1>
         <p className="pl-desc">
@@ -76,30 +85,25 @@ const [selected, setSelected] = useState("featured");
         <Product />
         <Product />
       </div> */}
-        <h1>portfolio</h1>
-        <ul>
-          {list.map(item=>(
-              <Product 
-              title={item.title}
+      <h1>portfolio</h1>
+      <ul>
+        {list.map((item) => (
+          <Product
+            title={item.title}
             active={selected === item.id}
             setSelected={setSelected}
             id={item.id}
-              />
-          ))}
-        </ul>
-        <div className="container">
+          />
+        ))}
+      </ul>
+      <div className="container">
         {data.map((d) => (
           <div className="item">
-            <img
-              src={d.img}
-              alt=""
-            />
+            <img src={d.img} alt="" />
             <h3>{d.title}</h3>
           </div>
         ))}
       </div>
-      </div>
-
+    </div>
   );
-};
-
+}

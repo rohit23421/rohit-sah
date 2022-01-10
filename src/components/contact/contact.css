@@ -48,7 +48,7 @@
 
 a {
   text-decoration: none;
-  color: black;
+  color: rgb(12, 109, 219);
 }
 
 .c-desc {
@@ -94,4 +94,41 @@ h4 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+  .c-wrapper {
+    flex-direction: column;
+    padding: 0px 50px;
+  }
+
+  .c-title {
+    font-size: 30px;
+  }
+
+  .c-info-item {
+    margin: 20px 0px;
+    width: 100%;
+  }
+
+  .c-desc {
+    display: none;
+  }
+
+  form {
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  input {
+    width: 100%;
+    height: 40px;
+    margin: 10px;
+    margin-left: 0;
+  }
+
+  button {
+    margin-top: 10px;
+  }
 }
