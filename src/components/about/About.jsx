@@ -4,7 +4,8 @@ import avatar from "../../img/AvatarMaker.png";
 
 const About = () => {
   return (
-    <div className="a">
+    <div className="a" id="about">
+      <div className="a-bg"></div>
       <div className="a-left">
         <div className="a-card bg"></div>
         <div className="a-card">

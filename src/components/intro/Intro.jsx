@@ -4,7 +4,7 @@ import Me from "../../img/rohit23421-removebg-preview.png";
 
 const Intro = () => {
   return (
-    <div className="i">
+    <div className="i" id="intro">
       <div className="i-left">
         <div className="i-left-wrapper">
           <h2 className="i-intro">Hello, I am</h2>

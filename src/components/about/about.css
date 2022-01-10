@@ -4,6 +4,13 @@
   align-items: center;
 }
 
+.a-bg {
+  width: 20px;
+  height: 100%;
+  background-color: rgb(129, 87, 48);
+  position: absolute;
+}
+
 .a-left {
   flex: 1;
   display: flex;
