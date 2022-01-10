@@ -10,7 +10,6 @@ export default function Topbar() {
             rohit23421
           </a>
         </div>
-        <div className="right"></div>
       </div>
     </div>
   );
