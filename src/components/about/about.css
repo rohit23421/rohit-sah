@@ -59,6 +59,11 @@
   margin: 20px 0px;
 }
 
+.a-sub-author {
+  text-align: right;
+  margin-right: 5px;
+}
+
 .a-desc {
   font-weight: 300;
 }
@@ -67,7 +72,7 @@
   margin-top: 50px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .a-award-texts {
@@ -99,7 +104,10 @@
     height: 30vh;
   }
 
-  .a-card.bg,
+  .a-card.bg {
+    display: none;
+  }
+
   .a-award {
     display: none;
   }

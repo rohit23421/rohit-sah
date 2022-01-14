@@ -15,27 +15,38 @@ const About = () => {
       <div className="a-right">
         <h1 className="a-title">About Me</h1>
         <p className="a-sub">
-          It is a long established fact that a reader will be distracted by the
-          readable content.
+          “It is important to doubt and that the doubt is not a fearful thing,
+          but a thing of great value.”
+          <p className="a-sub-author">Richard P. Feynman</p>
         </p>
         <p className="a-desc">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat duis aute irure dolor in reprehende.
+          Hello there, I am a 3rd year Engineering student, Backend developer
+          and DevOps and Cloud Enthusiast and learning, building and improving
+          myself one step at a time A passionate Backend developer, Cloud and
+          DevOps enthusiast and working on DevOps tools and CI/CD pipelines also
+          have some knowledge on AWS. Have a knack for working in different
+          fields and still learning more
         </p>
         <div className="a-award">
-          <img
-            src="https://signalprocessingsociety.org/sites/default/files/uploads/images/community_involvement/awards_pg.jpg"
-            alt=""
-            className="a-award-img"
-          />
-          <div className="a-award-texts">
-            <h4 className="a-award-title">International Design Awards 2021</h4>
-            <p className="a-award-desc">
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur autodit
-              and fugit.
-            </p>
+          <a href="https://rohit23421.github.io/resume">
+            <button>Resume</button>
+          </a>
+          <div className="a-award-tag">
+            <a
+              href="https://www.instagram.com/rohit23421/"
+              className="a-awardtags"
+            >
+              <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/rohit-sah-74989a19a"
+              className="a-awardtags"
+            >
+              <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://github.com/rohit23421" className="a-awardtags">
+              <i class="fab fa-github fa-2x"></i>
+            </a>
           </div>
         </div>
       </div>

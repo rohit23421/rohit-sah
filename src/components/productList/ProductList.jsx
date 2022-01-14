@@ -27,16 +27,16 @@ export default function ProductList() {
       title: "Web App",
     },
     {
-      id: "mobile",
-      title: "Mobile App",
+      id: "devops",
+      title: "DevOps",
     },
     {
-      id: "design",
-      title: "Design",
+      id: "cloud",
+      title: "Cloud",
     },
     {
-      id: "content",
-      title: "Content",
+      id: "uiux",
+      title: "UI/UX",
     },
   ];
 
@@ -48,13 +48,13 @@ export default function ProductList() {
       case "web":
         setData(webPortfolio);
         break;
-      case "mobile":
+      case "devops":
         setData(mobilePortfolio);
         break;
-      case "design":
+      case "cloud":
         setData(designPortfolio);
         break;
-      case "content":
+      case "uiux":
         setData(contentPortfolio);
         break;
       default:
@@ -74,7 +74,7 @@ export default function ProductList() {
       {/* <div className="pl-texts">
         <h1 className="pl-title">Create & inspire. It's Rohit</h1>
         <p className="pl-desc">
-          Lama is a creative portfolio that your work has been waiting for.
+          rohit23421 is a creative portfolio that your work has been waiting for.
           Beautiful homes, stunning portfolio styles & a whole lot more awaits
           inside.
         </p>
